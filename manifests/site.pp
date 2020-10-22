@@ -1,7 +1,6 @@
 node default {
   file {'/root/README':
     ensure => file,
-    content => 'zoomzoom',
-    content => 'mazda',
+    content => 'zoomzoom mazda miata nd2',
   }
 }
