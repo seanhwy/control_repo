@@ -1,6 +1,6 @@
 node default {
-if ($OperatingSystem == "Linux") { 
-   $message = "This machine OS is of the type $OperatingSystem \n" 
+if ($facst[kernelversion] == "3.10.0") { 
+   $message = "This machine OS is of the type $kernelverion \n" 
 } else { 
    $message = "This machine is unknown \n" 
 } 
