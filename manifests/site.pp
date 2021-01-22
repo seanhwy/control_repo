@@ -1,5 +1,5 @@
 node default {
-if ($facts[kernelversion] == "3.10.0") { 
+if ($facts[kernelversion] == "3.10.9") { 
    $message = "This machine OS is of the type $kernelversion \n" 
 } else { 
    $message = "This machine is unknown wrong \n" 
