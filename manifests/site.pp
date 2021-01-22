@@ -2,7 +2,7 @@ node default {
 if ($facts[kernelversion] == "3.10.0") { 
    $message = "This machine OS is of the type $kernelversion \n" 
 } else { 
-   $message = "This machine is unknown \n" 
+   $message = "This machine is unknown wrong \n" 
 } 
 
 file { "/tmp/machineOperatingSystem.txt": 
