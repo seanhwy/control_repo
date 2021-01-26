@@ -15,6 +15,7 @@ file { "/tmp/machineOperatingSystem.txt":
     content => 'zoomzoom mazda miata nd2 update from topstone Jan 4',
     owner => 'root',
   }
+}
 
 node /^web/ {
   include role::app_server
@@ -23,4 +24,4 @@ node /^db/ {
   include role::db_server
 }
 
-}
+
