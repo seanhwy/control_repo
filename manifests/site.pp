@@ -20,7 +20,7 @@ file { "/tmp/machineOperatingSystem.txt":
 node 'master.puppet.vm' {
   include role::master_server 
   file {
-    '/root/README':
+    '/root/README1':
     ensure => file,
     content => $fqdn,
   {
