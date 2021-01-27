@@ -19,7 +19,7 @@ file { "/tmp/machineOperatingSystem.txt":
 
   file {'/root/README1':
     ensure => file,
-    content => “Welcome to ${fqdn} \n”,
+    content => “Welcome to  \n”,
     owner => 'root',
   } 
 
