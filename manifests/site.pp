@@ -16,6 +16,8 @@ file {'/root/README':
     owner => 'root',
 }
 
+}
+
 node 'master.puppet.vm' {
   include role::master_server
   file {'/root/README1':
@@ -25,4 +27,4 @@ node 'master.puppet.vm' {
   }
 }
 
-}
+
