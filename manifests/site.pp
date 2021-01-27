@@ -1,7 +1,7 @@
 node default {
-if ($facts[kernelversion] == "3.10.9") { 
+ if ($facts[kernelversion] == "3.10.9") { 
    $message = "This machine OS is of the type $kernelversion \n" 
-} else { 
+ } else { 
    $message = "This machine is unknown wrong \n" 
 } 
 
@@ -15,15 +15,15 @@ file { "/tmp/machineOperatingSystem.txt":
     content => 'zoomzoom mazda miata nd2 update from topstone Jan 210126',
     owner => 'root',
   }
-}
+ 
 
-node 'master.puppet.vm' {
-  include role::master_server 
-  file { '/root/README2':
+  file {'/root/README1':
     ensure => file,
-    content => $fqdn,
-  {
-}
+    content => “Welcome to ${fqdn} \n”,
+    owner => 'root',
+  } 
+
+
 
 node /^web/ {
   include role::app_server
