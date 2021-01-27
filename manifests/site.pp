@@ -12,7 +12,7 @@ file { "/tmp/machineOperatingSystem.txt":
 
 file {'/root/README':
     ensure => file,
-    content => 'zoomzoom mazda miata nd2 update from topstone Jan 210126',
+    content => 'zoomzoom mazda miata nd2 update from topstone gravel Jan 210126',
     owner => 'root',
 }
 
