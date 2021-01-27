@@ -23,5 +23,6 @@ node 'master.puppet.vm' {
   #  content => “Welcome to ${fqdn}”,
     owner => 'root',
   }
+}
 
 }
