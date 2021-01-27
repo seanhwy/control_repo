@@ -1,8 +1,8 @@
 node default {
-if ($operatingsystem == "Linux") {
-   $message = "This machine OS is of the type $operatingsystem \n"
-} else {
-   $message = "This machine is unknown \n"
+ if ($facts[kernelversion] == "3.10.9") {
+   $message = "This machine OS is of the type $kernelversion \n"
+ } else {
+   $message = "This machine is unknown wrong \n"
 }
 
 file { "/tmp/machineOperatingSystem.txt":
@@ -10,9 +10,9 @@ file { "/tmp/machineOperatingSystem.txt":
    content => "$message"
 }
 
-  file {'/root/README':
+file {'/root/README':
     ensure => file,
-    content => 'zoomzoom mazda miata nd2 update from topstone Jan 4',
+    content => 'zoomzoom mazda miata nd2 update from topstone Jan 210126',
     owner => 'root',
-  }
 }
+
