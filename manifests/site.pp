@@ -1,6 +1,6 @@
 node default {
-if ($OperatingSystem == "Linux") {
-   $message = "This machine OS is of the type $OperatingSystem \n"
+if ($operatingsystem == "Linux") {
+   $message = "This machine OS is of the type $operatingsystem \n"
 } else {
    $message = "This machine is unknown \n"
 }
